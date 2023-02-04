@@ -6,9 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: bcc4ebbe51fb52241bc8df6cd76fc978
+  - enabled: 1
+    path: Assets/Scenes/MainCutscene.unity
+    guid: 45b6c18186aa65f46bb2746d3dee8c00
+  - enabled: 1
+    path: Assets/Scenes/sdafasgd.unity
+    guid: 2d02de1c7cee5cd4b98606881888bc9c
+  - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
     guid: 1816ac23222584242b26c4e3f1be27cb
   - enabled: 1
+    path: Assets/Scenes/DeathScreen2.unity
+    guid: c896c62cd9d2b3548a7978f9ffe14b7b
+  - enabled: 1
     path: "Assets/Scenes/U\xE7u\u015F.unity"
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Karakter.unity
+    guid: f43bf1566528e2b45972dff84f26b0ce
   m_configObjects: {}
