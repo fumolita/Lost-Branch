@@ -16,7 +16,7 @@ public class Wall : MonoBehaviour
         else if (collision.CompareTag("Player"))
         {
             Destroy(collision.gameObject);
-            Camera.main.transform.Translate(0, -10, 0);
+            Camera.main.transform.Translate(0, -15, 0);
         }
         
     }

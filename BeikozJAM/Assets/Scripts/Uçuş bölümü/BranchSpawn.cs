@@ -33,8 +33,9 @@ public class BranchSpawn : MonoBehaviour
             randomLength = Random.Range(0.5f, 4f);
 
             spawnedBranch = Instantiate(branchReference[randomIndex]);
+            spawnedBranch = Instantiate(branchReference[randomIndex]);
 
-        if (randomSide == 0)
+            if (randomSide == 0)
         {
             spawnedBranch.transform.position = leftPos.position;
             spawnedBranch.transform.localScale = new Vector3(randomLength, 1f, 1f);
