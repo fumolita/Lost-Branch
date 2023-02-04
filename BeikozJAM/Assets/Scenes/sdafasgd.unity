@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &26505374 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3968490043827618531, guid: c11f7217284bcbb42b01d4bcf08471ad, type: 3}
-  m_PrefabInstance: {fileID: 1399548993}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &27631870
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +211,7 @@ Transform:
   - {fileID: 369609186}
   - {fileID: 722078005}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &127512504
 GameObject:
@@ -2652,7 +2647,7 @@ Transform:
   - {fileID: 1653848859}
   - {fileID: 1809575799}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &270880967
 GameObject:
@@ -2702,8 +2697,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 0.38482088, y: -1.5520961}
-  - {x: -0.62722474, y: -1.5549607}
+  - {x: 0.5528119, y: -1.565474}
+  - {x: -0.79264814, y: -1.568853}
+  - {x: -0.80234206, y: -1.5555187}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -2756,8 +2752,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.61280584, y: 0.67041814}
-  - {x: -0.5996647, y: -2.3032265}
+  - {x: -0.60897017, y: 0.7893268}
+  - {x: -0.60733604, y: -2.4144638}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -2810,8 +2806,9 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.61254984, y: -1.2282902}
-  - {x: -0.6135635, y: -2.2204251}
+  - {x: -0.61279887, y: -1.1501397}
+  - {x: -0.61312413, y: -2.223581}
+  - {x: -0.8219645, y: -2.2210891}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -2879,7 +2876,7 @@ Transform:
   - {fileID: 1691250128}
   - {fileID: 1373503931}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &413678160
 GameObject:
@@ -3297,7 +3294,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &912740085
 GameObject:
@@ -3392,7 +3389,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3466,6 +3463,7 @@ GameObject:
   - component: {fileID: 1053082317}
   - component: {fileID: 1053082316}
   - component: {fileID: 1053082315}
+  - component: {fileID: 1053082318}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3532,13 +3530,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053082314}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.5, y: 6.39, z: -15.403574}
-  m_LocalScale: {x: 1.5403574, y: 1.5403574, z: 1.5403574}
+  m_LocalPosition: {x: 8.39, y: 3.49, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 26505374}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1053082318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053082314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e800dd3ecf493ee478329f75b890c6af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minX: 2.61
+  maxX: 8.39
+  minY: 0.51
+  maxY: 3.49
 --- !u!1 &1141392582
 GameObject:
   m_ObjectHideFlags: 0
@@ -3587,8 +3601,10 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.61254984, y: -1.2282902}
-  - {x: -0.6135635, y: -2.2204251}
+  - {x: 0.54452324, y: -1.2093108}
+  - {x: -0.572428, y: -1.2187762}
+  - {x: -0.5728495, y: -2.2280958}
+  - {x: 0.558868, y: -2.2217863}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -6205,8 +6221,11 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.63399225, y: 0.78516376}
-  - {x: -0.6135635, y: -2.2204251}
+  - {x: -0.87800515, y: 0.77791506}
+  - {x: -0.62721133, y: 0.7805365}
+  - {x: -0.6212076, y: 0.78055567}
+  - {x: -0.60724616, y: -2.2285404}
+  - {x: -0.85942584, y: -2.234151}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -6255,7 +6274,7 @@ Transform:
   - {fileID: 127512505}
   - {fileID: 1215263934}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1373503930
 GameObject:
@@ -6297,7 +6316,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3968490043827618531, guid: c11f7217284bcbb42b01d4bcf08471ad, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3968490043827618531, guid: c11f7217284bcbb42b01d4bcf08471ad, type: 3}
       propertyPath: m_LocalScale.x
@@ -6494,7 +6513,8 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -0.61280584, y: 0.67041814}
-  - {x: -0.5996647, y: -2.3032265}
+  - {x: -0.6126051, y: 0.81918335}
+  - {x: -0.5996647, y: -2.457681}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -6582,7 +6602,8 @@ EdgeCollider2D:
   - {x: -0.60719234, y: -2.212819}
   - {x: 3.3737338, y: -2.2060847}
   - {x: 3.3688345, y: 1.700355}
-  - {x: 0.37732124, y: 0.7798743}
+  - {x: 0.38269812, y: 0.86899567}
+  - {x: 0.38401717, y: 0.7882204}
   - {x: -0.5940402, y: 0.77862906}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
@@ -6620,7 +6641,7 @@ Transform:
   - {fileID: 554177363}
   - {fileID: 792191680}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1724535760
 GameObject:
@@ -6759,8 +6780,10 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.60527706, y: 0.7693305}
-  - {x: -0.60719395, y: -2.2538247}
+  - {x: -0.79534435, y: 0.7907467}
+  - {x: -0.60273933, y: 0.791626}
+  - {x: -0.6071558, y: -2.2280312}
+  - {x: -0.74372196, y: -2.2297316}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -6794,7 +6817,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1809575798
 GameObject:
@@ -6844,7 +6867,7 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -5.653073, y: 0.6986073}
+  - {x: -5.7570877, y: 0.6986073}
   - {x: -0.640749, y: 0.73159695}
   - {x: -0.6334915, y: -2.3032265}
   m_AdjacentStartPoint: {x: 0, y: 0}
