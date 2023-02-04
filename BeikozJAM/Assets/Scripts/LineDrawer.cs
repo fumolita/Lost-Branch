@@ -24,12 +24,12 @@ public class LineDrawer : MonoBehaviour
     {
 
         startMousePos = GameObject.Find("Square (1)").transform.position;
-
+        Vector3 oppositeDirection = (Camera.main.ScreenToWorldPoint(GameObject.Find("Square (1)").transform.position) - Camera.main.ScreenToWorldPoint(Input.mousePosition));
 
 
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         lineRend.SetPosition(0, new Vector3(startMousePos.x, startMousePos.y, 0f));
-        lineRend.SetPosition(1, new Vector3(-mousePos.x, -mousePos.y, 0f));
+        lineRend.SetPosition(0,oppositeDirection);
 
     }
 }
