@@ -153,7 +153,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 158148242}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.183}
 --- !u!68 &27631872
 EdgeCollider2D:
@@ -2584,6 +2584,9 @@ EdgeCollider2D:
   - {x: -5.9896646, y: -2.9927146}
   - {x: -4.992229, y: -3.0024827}
   - {x: -4.9922957, y: -3.989893}
+  - {x: -6.425437, y: -4.384492}
+  - {x: -7.619934, y: -4.373204}
+  - {x: -7.8748984, y: -4.367603}
   - {x: -9.005137, y: -4.005156}
   - {x: -8.998884, y: -4.9929733}
   - {x: -5.469804, y: -4.992852}
@@ -2635,7 +2638,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1755190381}
-  - {fileID: 1713432070}
   - {fileID: 1244536303}
   - {fileID: 313200194}
   - {fileID: 335758964}
@@ -2646,6 +2648,7 @@ Transform:
   - {fileID: 270880968}
   - {fileID: 1653848859}
   - {fileID: 1809575799}
+  - {fileID: 1233850790}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2679,7 +2682,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 158148242}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.183}
 --- !u!68 &270880969
 EdgeCollider2D:
@@ -2734,7 +2737,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 158148242}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &313200195
 EdgeCollider2D:
@@ -2788,7 +2791,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 158148242}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.183}
 --- !u!68 &335758965
 EdgeCollider2D:
@@ -3426,7 +3429,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 158148242}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.183}
 --- !u!68 &993819704
 EdgeCollider2D:
@@ -3583,7 +3586,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 158148242}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.183}
 --- !u!68 &1141392584
 EdgeCollider2D:
@@ -6173,6 +6176,62 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1233850789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1233850790}
+  - component: {fileID: 1233850791}
+  m_Layer: 0
+  m_Name: GameObject (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1233850790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233850789}
+  m_LocalRotation: {x: -0, y: -0, z: -0.70805764, w: 0.70615464}
+  m_LocalPosition: {x: 2.886, y: -10.803, z: 0.050641775}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 158148242}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.154}
+--- !u!68 &1233850791
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233850789}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.79534435, y: 0.7907467}
+  - {x: -0.60273933, y: 0.791626}
+  - {x: -0.6071558, y: -2.2280312}
+  - {x: -0.74372196, y: -2.2297316}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1244536302
 GameObject:
   m_ObjectHideFlags: 0
@@ -6203,7 +6262,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 158148242}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.183}
 --- !u!68 &1244536304
 EdgeCollider2D:
@@ -6332,11 +6391,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3968490043827618531, guid: c11f7217284bcbb42b01d4bcf08471ad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.4757
+      value: -7.11
       objectReference: {fileID: 0}
     - target: {fileID: 3968490043827618531, guid: c11f7217284bcbb42b01d4bcf08471ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.6209
+      value: -3.677
       objectReference: {fileID: 0}
     - target: {fileID: 3968490043827618531, guid: c11f7217284bcbb42b01d4bcf08471ad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6494,7 +6553,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 158148242}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1653848860
 EdgeCollider2D:
@@ -6550,65 +6609,6 @@ Transform:
   m_Father: {fileID: 393742628}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1713432069
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1713432070}
-  - component: {fileID: 1713432071}
-  m_Layer: 0
-  m_Name: GameObject (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1713432070
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1713432069}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.976, y: 0.024, z: 0.050641775}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 158148242}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!68 &1713432071
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1713432069}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -0.60527706, y: 0.7693305}
-  - {x: -0.60719234, y: -2.212819}
-  - {x: 3.3737338, y: -2.2060847}
-  - {x: 3.3688345, y: 1.700355}
-  - {x: 0.38269812, y: 0.86899567}
-  - {x: 0.38401717, y: 0.7882204}
-  - {x: -0.5940402, y: 0.77862906}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
 --- !u!1 &1718735304
 GameObject:
   m_ObjectHideFlags: 0
@@ -6849,7 +6849,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 158148242}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!68 &1809575800
 EdgeCollider2D:
@@ -6988,12 +6988,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889314300}
   m_LocalRotation: {x: -0, y: -0, z: 0.70656264, w: 0.7076505}
-  m_LocalPosition: {x: 11.21, y: -1.6, z: 0.050641775}
+  m_LocalPosition: {x: 11.223, y: -1.62, z: 0.050641775}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 158148242}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.912}
 --- !u!68 &1889314302
 EdgeCollider2D:
@@ -7011,9 +7011,16 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 2.415779, y: 0.8546568}
-  - {x: 2.4122071, y: 1.8226087}
-  - {x: -0.61586803, y: 1.8353479}
+  - {x: 2.4697492, y: 0.8433813}
+  - {x: 2.4461827, y: 1.6509292}
+  - {x: 2.4485679, y: 1.7653269}
+  - {x: 2.4517698, y: 1.8855921}
+  - {x: 2.0071437, y: 1.8842412}
+  - {x: 1.6187955, y: 1.8836805}
+  - {x: 1.2947913, y: 1.8902035}
+  - {x: 0.65018976, y: 1.886802}
+  - {x: 0.08414757, y: 1.8778354}
+  - {x: -0.5904683, y: 1.8739114}
   - {x: -0.6092482, y: -2.1721077}
   - {x: 3.365179, y: -2.157233}
   m_AdjacentStartPoint: {x: 0, y: 0}
