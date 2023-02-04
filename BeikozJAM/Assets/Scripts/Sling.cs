@@ -5,7 +5,6 @@ using UnityEngine;
 public class Sling : MonoBehaviour
 {
     private bool isPressed;
-    private bool onCollision;
 
     private float releaseDelay;
 
@@ -65,15 +64,11 @@ public class Sling : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        onCollision = true;
         rb.velocity = new Vector2(0,0);
         slingCircle = Instantiate(sling);
         slingCircle.transform.position = transform.position;
         StopCoroutine(Release());
         sj.enabled = true;
     }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        onCollision = false;
-    }
+
 }

@@ -27,7 +27,7 @@ public class Deneme : MonoBehaviour
     {
         isPressed = false;
         mouseEnd = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 distance = (mouseEnd - mouseStart) * 15;
+        Vector3 distance = (mouseEnd - mouseStart) * 5;
         rb.velocity = new Vector2(-distance.x, -distance.y);
     }
     private void OnCollisionEnter2D(Collision2D collision)
