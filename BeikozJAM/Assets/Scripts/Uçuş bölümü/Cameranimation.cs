@@ -4,16 +4,23 @@ using UnityEngine;
 
 public class Cameranimation : MonoBehaviour
 {
-    float timeLeft = 2.0f;
 
-    // Update is called once per frame
     void Update()
     {
-        timeLeft -= Time.deltaTime;
-        if (timeLeft < 0)
+        while (Camera.main.transform.position.y > new Vector3(0, -50f, 0).y)
         {
-            Camera.main.transform.Translate(0, -10f, 0);
-            timeLeft = 2.0f;
+            if (Input.anyKeyDown)
+            {
+                Camera.main.transform.Translate(0, -10f, 0);
+                break;
+            }
+            else
+            {
+                break;
+            }
         }
+
+
+
     }
 }
