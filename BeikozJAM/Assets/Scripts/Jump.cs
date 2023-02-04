@@ -42,5 +42,4 @@ public class Jump : MonoBehaviour
         onCollision = false;
     }
 
-
 }
