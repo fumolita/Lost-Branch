@@ -7,7 +7,7 @@ public class Fly : MonoBehaviour
 
     public float speed = 50;
 
-    void Update()
+    void FixedUpdate()
     {
         float h = Input.GetAxis("Horizontal");
         
