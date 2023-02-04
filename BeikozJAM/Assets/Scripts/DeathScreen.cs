@@ -7,6 +7,6 @@ public class DeathScreen : MonoBehaviour
 {
    public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
 }

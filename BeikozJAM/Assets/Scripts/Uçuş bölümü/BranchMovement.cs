@@ -17,10 +17,10 @@ public class BranchMovement : MonoBehaviour
     {
         myBody = GetComponent <Rigidbody2D>();
 
-        speed = 7;
+        speed = 5;
     }
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
         myBody.velocity = new Vector2(myBody.velocity.x, speed);
@@ -28,7 +28,7 @@ public class BranchMovement : MonoBehaviour
 
     public void Death()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

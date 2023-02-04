@@ -21,7 +21,9 @@ public class Jump : MonoBehaviour
 
     private void Start()
     {
-        lineRenderer.enabled = false;
+        gameObject.GetComponent<LineRenderer>().positionCount = 2;
+        gameObject.GetComponent<LineRenderer>().material.SetColor("_Color", Color.red);
+        ; lineRenderer.enabled = false;
         lineRenderer = this.GetComponent<LineRenderer>();
         lineRenderer.widthCurve = new AnimationCurve(
             new Keyframe(0, 0.4f)
