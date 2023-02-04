@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Jump : MonoBehaviour
 {
-    private bool isPressed;
+
     private Vector3 mouseStart;
     private Vector3 mouseEnd;
     public Rigidbody2D rb;
@@ -15,7 +15,7 @@ public class Jump : MonoBehaviour
         while (onCollision == true)
         {
             //rb = GetComponent<Rigidbody2D>();
-            isPressed = true;
+
             mouseStart = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             break;
         }
@@ -25,7 +25,7 @@ public class Jump : MonoBehaviour
     {
         while (onCollision == true)
         {
-            isPressed = false;
+
             mouseEnd = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector3 distance = (mouseEnd - mouseStart) * 5;
             rb.velocity = new Vector2(-distance.x, -distance.y);
@@ -41,5 +41,6 @@ public class Jump : MonoBehaviour
     {
         onCollision = false;
     }
+
 
 }
