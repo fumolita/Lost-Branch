@@ -19,6 +19,7 @@ public class Jump : MonoBehaviour
 
     public LineRenderer lineRenderer;
 
+<<<<<<< Updated upstream
     private void Start()
     {
         gameObject.GetComponent<LineRenderer>().positionCount = 2;
@@ -37,6 +38,25 @@ public class Jump : MonoBehaviour
               , ArrowTarget });
         VelX = rb.velocity.x;
         VelY = rb.velocity.y;
+=======
+
+    public LineRenderer lineRenderer; // the line renderer component
+    public int predictionSteps = 20; // the number of steps to take when predicting the trajectory
+    public float predictionInterval = 0.1f; // the interval at which to take prediction steps
+
+    void Start()
+    {
+        lineRenderer.positionCount = predictionSteps;
+        Vector2 velocity = rb.velocity;
+        Vector2 acceleration = Physics2D.gravity;
+        Vector2 position = (Vector2)transform.position;
+        for (int i = 0; i < predictionSteps; i++)
+        {
+            lineRenderer.SetPosition(i, (Vector3)position);
+            velocity += acceleration * predictionInterval;
+            position += velocity * predictionInterval;
+        }
+>>>>>>> Stashed changes
     }
     private void OnMouseDown()
     {
