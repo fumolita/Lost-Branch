@@ -1,9 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Cameranimation : MonoBehaviour
 {
+
+    private int click;
+
+    public void Skip()
+    {
+        SceneManager.LoadScene(2);
+    }
 
     void Update()
     {
@@ -20,7 +28,14 @@ public class Cameranimation : MonoBehaviour
             }
         }
 
-
+        while (Camera.main.transform.position.y == new Vector3(0, -50f, 0).y)
+        {
+            if (Input.anyKeyDown)
+            {
+                Skip();
+            }
+            
+        }
 
     }
 }
