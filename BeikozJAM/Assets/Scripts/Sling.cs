@@ -11,7 +11,6 @@ public class Sling : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpringJoint2D sj;
-    //public Rigidbody2D replica;
 
     public GameObject sling;
     private GameObject slingCircle;
@@ -33,7 +32,6 @@ public class Sling : MonoBehaviour
 
             Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         rb.position = mousePosition;
-        //replica.position = mousePosition;
     }
 
     // Update is called once per frame
@@ -64,7 +62,6 @@ public class Sling : MonoBehaviour
     {
         yield return new WaitForSeconds(releaseDelay);
         sj.enabled = false;
-        //rb.position = replica.position;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
