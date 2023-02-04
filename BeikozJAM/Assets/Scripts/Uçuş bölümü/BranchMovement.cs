@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BranchMovement : MonoBehaviour
 {
@@ -25,6 +26,17 @@ public class BranchMovement : MonoBehaviour
         myBody.velocity = new Vector2(myBody.velocity.x, speed);
     }
 
+    public void Death()
+    {
+        SceneManager.LoadScene(0);
+    }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            Death();
+        }
+    }
 
 }

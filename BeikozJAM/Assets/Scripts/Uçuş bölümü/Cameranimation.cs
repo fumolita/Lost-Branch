@@ -2,14 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Gravity : MonoBehaviour
+public class Cameranimation : MonoBehaviour
 {
     float timeLeft = 2.0f;
-
-    void Start()
-    {
-      
-    }
 
     // Update is called once per frame
     void Update()
@@ -17,9 +12,8 @@ public class Gravity : MonoBehaviour
         timeLeft -= Time.deltaTime;
         if (timeLeft < 0)
         {
-            Physics.gravity = new Vector3(0, -1.0F, 0);
+            Camera.main.transform.Translate(0, -10f, 0);
+            timeLeft = 2.0f;
         }
-
-
     }
 }
