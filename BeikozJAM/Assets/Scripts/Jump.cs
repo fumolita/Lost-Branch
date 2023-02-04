@@ -14,6 +14,8 @@ public class Jump : MonoBehaviour
     public bool isPressed;
     public Vector3 ArrowOrigin;
     public Vector3 ArrowTarget;
+    public float VelX;
+    public float VelY;
 
     public LineRenderer lineRenderer;
 
@@ -33,12 +35,13 @@ public class Jump : MonoBehaviour
               , Vector3.Lerp(ArrowOrigin, ArrowTarget, 0.999f - 0.8f)
               , Vector3.Lerp(ArrowOrigin, ArrowTarget, 1 - 0.8f)
               , ArrowTarget });
+        VelX = rb.velocity.x;
+        VelY = rb.velocity.y;
     }
     private void OnMouseDown()
     {
         while (onCollision == true)
         {
-            //rb = GetComponent<Rigidbody2D>();
 
             mouseStart = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             isPressed = true;
@@ -66,8 +69,9 @@ public class Jump : MonoBehaviour
     {
         if (isPressed)
         {
-            lineRenderer.SetPosition(0, -((Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - mouseStart)*2);
+            lineRenderer.SetPosition(0, -((Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - mouseStart) * 2);
         }
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
