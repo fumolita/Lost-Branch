@@ -93,6 +93,11 @@ public class Jump : MonoBehaviour
         //{
         //    StartCoroutine(FallAfterTime(4));
         //}
+        while (collision.transform.gameObject.name == "MovingPlatform")
+        {
+            rb.velocity = new Vector2(transform.position.x, collision.transform.gameObject.transform.position.y);
+            break;
+        }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
