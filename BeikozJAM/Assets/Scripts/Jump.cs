@@ -16,6 +16,8 @@ public class Jump : MonoBehaviour
     public Vector3 ArrowTarget;
     public float VelX;
     public float VelY;
+    private HingeJoint2D hj;
+    public bool platformCol;
 
     public LineRenderer lineRenderer;
 
@@ -93,11 +95,19 @@ public class Jump : MonoBehaviour
         //{
         //    StartCoroutine(FallAfterTime(4));
         //}
-        while (collision.transform.gameObject.name == "MovingPlatform")
+        
         {
-            rb.velocity = new Vector2(transform.position.x, collision.transform.gameObject.transform.position.y);
-            break;
+            //gameObject.GetComponent<Rigidbody2D>().mass = 0.00001f;
+            //gameObject.GetComponent<Rigidbody2D>().gravityScale = 2;
+            //collision.transform.gameObject.GetComponent<Rigidbody2D>().mass = 0.00001f;
+            //collision.transform.gameObject.GetComponent<Collider2D>().sharedMaterial.bounciness = 0;
+            //collision.transform.gameObject.GetComponent<Rigidbody2D>().freezeRotation = true;
+            //collision.transform.gameObject.GetComponent<HingeJoint2D>().enabled = true;
+            Transform colTran = collision.transform;
+            transform.parent = colTran;
         }
+
+
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
@@ -108,6 +118,9 @@ public class Jump : MonoBehaviour
         //{
         //    StopCoroutine(FallAfterTime(0));
         //}
+        if (collision.transform.gameObject.name == "PlatformMove") { 
+            transform.parent = transform;
+        }
     }
 
 }
