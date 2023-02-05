@@ -15,7 +15,7 @@ public class Cameranimation : MonoBehaviour
 
     void Update()
     {
-        while (Camera.main.transform.position.y > new Vector3(0, -60f, 0).y)
+        while (Camera.main.transform.position.y > new Vector3(0, -100f, 0).y)
         {
             if (Input.anyKeyDown)
             {
@@ -28,7 +28,7 @@ public class Cameranimation : MonoBehaviour
             }
         }
 
-        while (Camera.main.transform.position.y == new Vector3(0, -60f, 0).y)
+        while (Camera.main.transform.position.y == new Vector3(0, -100f, 0).y)
         {
             if (Input.anyKeyDown)
             {

@@ -13,16 +13,14 @@ public class BranchSpawn : MonoBehaviour
     private Transform leftPos, rightPos;
 
     private int randomIndex;
-    private int randomSide;
-    private float randomLength;
-
+    private float randomLength1;
+    private float randomLength2;
 
     void Start()
     {
         StartCoroutine(SpawnBranches());
     }
 
-   
     IEnumerator SpawnBranches()
     {
         while (true)
@@ -31,34 +29,16 @@ public class BranchSpawn : MonoBehaviour
 
             randomIndex = Random.Range(0, branchReference.Length);
 
+            randomLength1 = Random.Range(0.9f, (3f - 0.9f) / 2f);
+            randomLength2 = 3f - randomLength1;
+
             GameObject spawnedBranch1 = Instantiate(branchReference[randomIndex]);
-            randomSide = Random.Range(0, 2);
-            randomLength = Random.Range(0.9f, 4f);
-            if (randomSide == 0)
-            {
-                spawnedBranch1.transform.position = leftPos.position;
-                spawnedBranch1.transform.localScale = new Vector3(randomLength, 1f, 1f);
-            }
-            else if (randomSide == 1)
-            {
-                spawnedBranch1.transform.position = rightPos.position;
-                spawnedBranch1.transform.localScale = new Vector3(-randomLength, 1f, 1f);
-            }
+            spawnedBranch1.transform.position = leftPos.position;
+            spawnedBranch1.transform.localScale = new Vector3(randomLength1 * Random.Range(-1f, 1f), 1f, 1f);
 
             GameObject spawnedBranch2 = Instantiate(branchReference[randomIndex]);
-            randomSide = Random.Range(0, 2);
-            randomLength = Random.Range(0.9f, 4f);
-            if (randomSide == 0)
-            {
-                spawnedBranch2.transform.position = leftPos.position;
-                spawnedBranch2.transform.localScale = new Vector3(randomLength, 1f, 1f);
-            }
-            else if (randomSide == 1)
-            {
-                spawnedBranch2.transform.position = rightPos.position;
-                spawnedBranch2.transform.localScale = new Vector3(-randomLength, 1f, 1f);
-            }
+            spawnedBranch2.transform.position = rightPos.position;
+            spawnedBranch2.transform.localScale = new Vector3(-randomLength2 * Random.Range(-1f, 1f), 1f, 1f);
         }
-
     }
 }
