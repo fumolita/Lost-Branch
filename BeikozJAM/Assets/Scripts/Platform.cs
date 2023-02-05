@@ -21,11 +21,11 @@ public class Platform : MonoBehaviour
     {
         if (transform.position == pos1.position) 
         {
-            nextPos = pos2.position;
+            StartCoroutine(platfromWait1(3));
         }
         if (transform.position == pos2.position) 
         {
-            nextPos=pos1.position;   
+            StartCoroutine(platfromWait2(3));
         }
 
         transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);
@@ -35,5 +35,14 @@ public class Platform : MonoBehaviour
     {
         Gizmos.DrawLine(pos1.position, pos2.position);
     }
-
+    IEnumerator platfromWait1(float time)
+    {
+        yield return new WaitForSeconds(time);
+        nextPos = pos2.position;
+    }
+    IEnumerator platfromWait2(float time)
+    {
+        yield return new WaitForSeconds(time);
+        nextPos = pos1.position;
+    }
 }
