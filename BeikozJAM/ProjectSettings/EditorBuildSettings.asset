@@ -12,8 +12,23 @@ EditorBuildSettings:
     path: Assets/Scenes/MainCutscene.unity
     guid: 45b6c18186aa65f46bb2746d3dee8c00
   - enabled: 1
-    path: Assets/Scenes/sdafasgd.unity
+    path: Assets/Scenes/Platform.unity
     guid: 2d02de1c7cee5cd4b98606881888bc9c
+  - enabled: 1
+    path: Assets/Scenes/Cutscene2.unity
+    guid: adaf4c33f9389ae4094d0f43faf58642
+  - enabled: 1
+    path: "Assets/Scenes/U\xE7u\u015F.unity"
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Cutscene3.unity
+    guid: 4058e51585a2cbb43a4219fc41c92923
+  - enabled: 1
+    path: Assets/Scenes/LastPlatform.unity
+    guid: 793f4b1309b0df44ba747276648a0c21
+  - enabled: 1
+    path: Assets/Scenes/FinalCutscene.unity
+    guid: 2a012f149beb78d44a7d9cbfd2317462
   - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
     guid: 1816ac23222584242b26c4e3f1be27cb
@@ -21,9 +36,6 @@ EditorBuildSettings:
     path: Assets/Scenes/DeathScreen2.unity
     guid: c896c62cd9d2b3548a7978f9ffe14b7b
   - enabled: 1
-    path: "Assets/Scenes/U\xE7u\u015F.unity"
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Karakter.unity
-    guid: f43bf1566528e2b45972dff84f26b0ce
+    path: Assets/Scenes/Ending.unity
+    guid: 72aa4281ac8fc2e4db0eaf29c791df91
   m_configObjects: {}
