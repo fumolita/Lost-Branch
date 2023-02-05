@@ -10,7 +10,7 @@ public class Cameranimation1 : MonoBehaviour
 
     public void Skip()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 
     void Update()
