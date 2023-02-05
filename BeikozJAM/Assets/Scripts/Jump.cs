@@ -67,16 +67,16 @@ public class Jump : MonoBehaviour
             break;
         }
     }
-    IEnumerator FallAfterTime(float time)
-    {
-        yield return new WaitForSeconds(time);
+    //IEnumerator FallAfterTime(float time)
+    //{
+    //    yield return new WaitForSeconds(time);
 
-        if (onCollision == true)
-        {
-            onCollision = false;
-            rb.velocity += new Vector2(0, -5f);
-        }
-    }
+    //    if (onCollision == true)
+    //    {
+    //        onCollision = false;
+    //        rb.velocity += new Vector2(0, -5f);
+    //    }
+    //}
     private void Update()
     {
         if (isPressed)
@@ -89,20 +89,20 @@ public class Jump : MonoBehaviour
         rb.velocity = new Vector2(0, 0);
         onCollision = true;
         gameObject.GetComponent<Animator>().SetBool("Flying",false);
-        if (collision.transform.gameObject.tag != "Respawn")
-        {
-            StartCoroutine(FallAfterTime(4));
-        }
+        //if (collision.transform.gameObject.tag != "Respawn")
+        //{
+        //    StartCoroutine(FallAfterTime(4));
+        //}
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
         onCollision = false;
         gameObject.GetComponent<Animator>().SetBool("Flying", true);
-        StopCoroutine(FallAfterTime(4));
-        if (collision.transform.gameObject.tag != "Respawn")
-        {
-            StopCoroutine(FallAfterTime(0));
-        }
+        //StopCoroutine(FallAfterTime(4));
+        //if (collision.transform.gameObject.tag != "Respawn")
+        //{
+        //    StopCoroutine(FallAfterTime(0));
+        //}
     }
 
 }
