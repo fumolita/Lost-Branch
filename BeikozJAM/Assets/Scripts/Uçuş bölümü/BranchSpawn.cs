@@ -15,6 +15,8 @@ public class BranchSpawn : MonoBehaviour
     private int randomIndex;
     private float randomLength1;
     private float randomLength2;
+    private float randomPosLeft;
+    private float randomPosRight;
 
     void Start()
     {
@@ -25,20 +27,22 @@ public class BranchSpawn : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(1, 4));
+            yield return new WaitForSeconds(Random.Range(1, 2));
+            randomPosLeft = Random.Range(-1f, 0);
+            randomPosRight = Random.Range(0, 1f);
 
             randomIndex = Random.Range(0, branchReference.Length);
 
             randomLength1 = Random.Range(0.9f, (3f - 0.9f) / 2f);
-            randomLength2 = 3f - randomLength1;
+            randomLength2 = 4.5f - randomLength1;
 
             GameObject spawnedBranch1 = Instantiate(branchReference[randomIndex]);
-            spawnedBranch1.transform.position = leftPos.position;
-            spawnedBranch1.transform.localScale = new Vector3(randomLength1 * Random.Range(-1f, 1f), 1f, 1f);
+            spawnedBranch1.transform.position = new Vector3(leftPos.position.x - (randomPosLeft),leftPos.position.y);
+            spawnedBranch1.transform.localScale = new Vector3(-randomLength1 * randomPosLeft, 1f, 1f);
 
             GameObject spawnedBranch2 = Instantiate(branchReference[randomIndex]);
-            spawnedBranch2.transform.position = rightPos.position;
-            spawnedBranch2.transform.localScale = new Vector3(-randomLength2 * Random.Range(-1f, 1f), 1f, 1f);
+            spawnedBranch2.transform.position = new Vector3(rightPos.position.x - (randomPosRight), rightPos.position.y);
+            spawnedBranch2.transform.localScale = new Vector3(-randomLength2 * randomPosRight, 1f, 1f);
         }
     }
 }
