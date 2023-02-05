@@ -260,7 +260,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -2.067808, y: -7.8870125}
+  m_Offset: {x: -1.6077878, y: -7.8870125}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -271,7 +271,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0926499, y: 4.7780404}
+  m_Size: {x: 2.01269, y: 4.77804}
   m_EdgeRadius: 0
 --- !u!1 &127512504
 GameObject:
@@ -4085,12 +4085,12 @@ EdgeCollider2D:
   - {x: 13.042389, y: 2.0147865}
   - {x: 12.983874, y: 4.875408}
   - {x: 12.419207, y: 5.3163524}
-  - {x: 12.373651, y: 8.357142}
-  - {x: 12.288109, y: 9.033797}
-  - {x: 12.994635, y: 8.992878}
-  - {x: 13.002476, y: 10.104268}
-  - {x: 13.016599, y: 12.993517}
-  - {x: 14.068323, y: 9.100192}
+  - {x: 12.373651, y: 8.042322}
+  - {x: 12.428029, y: 8.042698}
+  - {x: 12.481595, y: 8.001778}
+  - {x: 13.002476, y: 8.005468}
+  - {x: 13.991036, y: 8.023615}
+  - {x: 13.982857, y: 9.063563}
   - {x: 23.982143, y: 9.012974}
   - {x: 23.964685, y: 5.0204077}
   - {x: 22.909698, y: 4.9992886}
@@ -4117,11 +4117,11 @@ EdgeCollider2D:
   - {x: 9.00436, y: 4.013049}
   - {x: 8.521951, y: 4.0025883}
   - {x: 8.016359, y: 4.0055394}
-  - {x: 8.001265, y: 3.0368814}
-  - {x: 8.026472, y: 3.0231664}
+  - {x: 7.9941006, y: 3.3010223}
+  - {x: 8.083784, y: 3.2441792}
   - {x: 8.961398, y: 3.0029647}
   - {x: 8.844109, y: 2.0110245}
-  - {x: 8.008392, y: 1.9734681}
+  - {x: 8.008392, y: 1.7452195}
   - {x: 7.999268, y: -0.9987641}
   - {x: 7.9898944, y: -1.2917428}
   - {x: 8.007737, y: -2.9851294}
@@ -4136,8 +4136,8 @@ EdgeCollider2D:
   - {x: 3.0134964, y: -2.9670644}
   - {x: 3.0034301, y: -4.9609585}
   - {x: 0.0056221783, y: -4.97344}
-  - {x: -0.005336404, y: -0.99657357}
-  - {x: -0.95776373, y: -1.0045743}
+  - {x: -0.019616202, y: -1.9961597}
+  - {x: -0.95776373, y: -1.9756007}
   - {x: -0.9348098, y: -1.9853746}
   - {x: -2.001466, y: -1.9689522}
   - {x: -2.0019598, y: -0.99582934}
@@ -8012,7 +8012,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 12.036522, y: 1.9413941}
+  m_Offset: {x: 12.036522, y: 1.9928017}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8023,7 +8023,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.8406038, y: 2.9373422}
+  m_Size: {x: 2.8406029, y: 3.0401573}
   m_EdgeRadius: 0
 --- !u!1 &1559257050
 GameObject:
@@ -8417,7 +8417,7 @@ GameObject:
   - component: {fileID: 1792090504}
   m_Layer: 0
   m_Name: Wall1 (15)
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8655,7 +8655,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 7.8048863, y: -2.064697}
+  m_Offset: {x: 7.8048863, y: -2.0396585}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -8666,7 +8666,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8847513, y: 1.0315213}
+  m_Size: {x: 0.8847513, y: 1.4238999}
   m_EdgeRadius: 0
 --- !u!1 &3968490044656610985 stripped
 GameObject:
@@ -8689,6 +8689,26 @@ CapsuleCollider2D:
   m_Offset: {x: -0.053547055, y: 0}
   m_Size: {x: 0.18264447, y: 0.84}
   m_Direction: 0
+--- !u!95 &3968490044656610993
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3968490044656610985}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d7ffa302285c314db78eb100d4e4850, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1001 &4132109362968421995
 PrefabInstance:
   m_ObjectHideFlags: 0

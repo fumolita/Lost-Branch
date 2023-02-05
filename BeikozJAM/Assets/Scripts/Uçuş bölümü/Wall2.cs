@@ -7,7 +7,7 @@ public class Wall2 : MonoBehaviour
 {
     public void Death()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(8);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -47,6 +47,7 @@ public class Jump : MonoBehaviour
             isPressed = true;
             lineRenderer.enabled = true;
             lineRenderer.SetPosition(0, Camera.main.ScreenToWorldPoint(Input.mousePosition));
+            gameObject.GetComponent<Animator>().SetBool("Winding", true);
             break;
         }
         
@@ -62,7 +63,18 @@ public class Jump : MonoBehaviour
             rb.velocity = new Vector2(-distance.x, -distance.y);
             isPressed = false;
             lineRenderer.enabled = false;
+            gameObject.GetComponent<Animator>().SetBool("Winding", false);
             break;
+        }
+    }
+    IEnumerator FallAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        if (onCollision == true)
+        {
+            onCollision = false;
+            rb.velocity += new Vector2(0, -5f);
         }
     }
     private void Update()
@@ -71,16 +83,26 @@ public class Jump : MonoBehaviour
         {
             lineRenderer.SetPosition(0, -((Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition) - mouseStart) * 2);
         }
-
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         rb.velocity = new Vector2(0, 0);
         onCollision = true;
+        gameObject.GetComponent<Animator>().SetBool("Flying",false);
+        if (collision.transform.gameObject.tag != "Respawn")
+        {
+            StartCoroutine(FallAfterTime(4));
+        }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
         onCollision = false;
+        gameObject.GetComponent<Animator>().SetBool("Flying", true);
+        StopCoroutine(FallAfterTime(4));
+        if (collision.transform.gameObject.tag != "Respawn")
+        {
+            StopCoroutine(FallAfterTime(0));
+        }
     }
 
 }
