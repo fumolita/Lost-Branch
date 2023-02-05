@@ -128,6 +128,7 @@ MonoBehaviour:
   ArrowTarget: {x: 0, y: 0, z: 0}
   VelX: 0
   VelY: 0
+  platformCol: 0
   lineRenderer: {fileID: 4132109363508792084}
 --- !u!120 &4132109363508792084
 LineRenderer:
@@ -193,8 +194,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0, b: 0, a: 1}
+      key0: {r: 0.8679245, g: 0.8466358, b: 0.8466358, a: 1}
+      key1: {r: 0.8679245, g: 0.8466358, b: 0.8466358, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
