@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Cameranimation2 : MonoBehaviour
 {
 
-    private int click;
 
     public void Skip()
     {
@@ -27,6 +26,8 @@ public class Cameranimation2 : MonoBehaviour
                 break;
             }
         }
+
+        
 
         while (Camera.main.transform.position.y == new Vector3(0, -65f, 0).y)
         {

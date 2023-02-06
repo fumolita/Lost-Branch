@@ -111,6 +111,7 @@ public class Jump : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
+        SoundManager.PlaySound("jump");
         onCollision = false;
         gameObject.GetComponent<Animator>().SetBool("Flying", true);
         //StopCoroutine(FallAfterTime(4));

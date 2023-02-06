@@ -28,7 +28,7 @@ public class BranchMovement : MonoBehaviour
 
     public void Death()
     {
-        SceneManager.LoadScene(7);
+        SceneManager.LoadScene(9);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

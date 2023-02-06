@@ -10,7 +10,6 @@ public class SoundManager : MonoBehaviour
     {
         rainSound = Resources.Load<AudioClip>("rain");
         jumpSound = Resources.Load<AudioClip>("jump");
-        hitSound = Resources.Load<AudioClip>("hit");
         crackSound = Resources.Load<AudioClip>("crack");
 
         audioSrc = GetComponent<AudioSource>();
@@ -26,20 +25,15 @@ public class SoundManager : MonoBehaviour
     {
         switch (clip)
         {
-
             case "rain" :
                 audioSrc.PlayOneShot(rainSound);
                 break;
             case "jump":
                 audioSrc.PlayOneShot(jumpSound);
                 break;
-            case "hit":
-                audioSrc.PlayOneShot(hitSound);
-                break;
             case "crack":
                 audioSrc.PlayOneShot(crackSound);
                 break;
-
         }
     }
 

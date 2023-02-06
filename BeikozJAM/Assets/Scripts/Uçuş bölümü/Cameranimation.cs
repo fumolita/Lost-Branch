@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 public class Cameranimation : MonoBehaviour
 {
 
-    private int click;
+    
 
     public void Skip()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(10);
     }
 
     void Update()

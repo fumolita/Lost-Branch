@@ -10,12 +10,12 @@ public class Cameranimation1 : MonoBehaviour
 
     public void Skip()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(2);
     }
 
     void Update()
     {
-        while (Camera.main.transform.position.y > new Vector3(0, -50f, 0).y)
+        while (Camera.main.transform.position.y > new Vector3(0, -60f, 0).y)
         {
             if (Input.anyKeyDown)
             {
@@ -28,7 +28,7 @@ public class Cameranimation1 : MonoBehaviour
             }
         }
 
-        while (Camera.main.transform.position.y == new Vector3(0, -50f, 0).y)
+        while (Camera.main.transform.position.y == new Vector3(0, -60f, 0).y)
         {
             if (Input.anyKeyDown)
             {

@@ -22,10 +22,12 @@ public class PPlatform : MonoBehaviour
         if (transform.position == pos1.position)
         {
             nextPos = pos2.position;
+            transform.localScale = new Vector3(1, -1, 1);
         }
         if (transform.position == pos2.position)
         {
             nextPos = pos1.position;
+            transform.localScale = new Vector3(-1, 1, 1);
         }
 
         transform.position = Vector3.MoveTowards(transform.position, nextPos, speed * Time.deltaTime);

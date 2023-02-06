@@ -24,8 +24,8 @@ EditorBuildSettings:
     path: Assets/Scenes/LastPlatform.unity
     guid: 793f4b1309b0df44ba747276648a0c21
   - enabled: 1
-    path: Assets/Scenes/FinalCutscene.unity
-    guid: 2a012f149beb78d44a7d9cbfd2317462
+    path: Assets/Scenes/Final Cutscene.unity
+    guid: c44506fe563c9d445adaa23216645105
   - enabled: 1
     path: Assets/Scenes/DeathScreen.unity
     guid: 1816ac23222584242b26c4e3f1be27cb
