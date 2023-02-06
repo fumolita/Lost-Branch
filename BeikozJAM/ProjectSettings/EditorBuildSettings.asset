@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Ending.unity
     guid: 72aa4281ac8fc2e4db0eaf29c791df91
+  - enabled: 1
+    path: Assets/Scenes/DeathScreen4.unity
+    guid: f05cba5a82689c040ba204cc9c8b4c29
+  - enabled: 1
+    path: Assets/Scenes/Tree.unity
+    guid: 4a5950b73c4539743b40a0aea4c3ed7a
   m_configObjects: {}

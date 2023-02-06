@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DeathScreen2 : MonoBehaviour
+public class DeathScreen4 : MonoBehaviour
 {
     public void Dead2()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(12);
     }
 }
