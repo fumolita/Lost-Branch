@@ -7112,6 +7112,8 @@ GameObject:
   - component: {fileID: 542933849}
   - component: {fileID: 542933851}
   - component: {fileID: 542933850}
+  - component: {fileID: 542933852}
+  - component: {fileID: 542933853}
   m_Layer: 0
   m_Name: PlatformMov
   m_TagString: Untagged
@@ -7178,6 +7180,34 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.99829733, y: 1.9882755}
   m_EdgeRadius: 0
+--- !u!114 &542933852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542933848}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3342e09a13c7b64fa2879e9d5ef7fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos1: {fileID: 870277662}
+  pos2: {fileID: 281948276}
+  speed: 3
+  startPos: {fileID: 870277662}
+--- !u!114 &542933853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542933848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c8db54cae6aed4aa2216bef410844e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &671710932
 GameObject:
   m_ObjectHideFlags: 0
@@ -7223,7 +7253,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.4733622, y: -0.49627352}
+  m_Offset: {x: 0.4733622, y: -0.5489278}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7234,7 +7264,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9467244, y: 1.954915}
+  m_Size: {x: 1.9467244, y: 2.1234083}
   m_EdgeRadius: 0
 --- !u!1 &744200806
 GameObject:
@@ -7346,6 +7376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 749481680}
   - component: {fileID: 749481679}
+  - component: {fileID: 749481681}
   m_Layer: 0
   m_Name: NextScene
   m_TagString: Untagged
@@ -7366,7 +7397,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.8478626, y: -1.5286589}
+  m_Offset: {x: -1.2739563, y: -1.5286589}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -7377,7 +7408,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.0918863, y: 4.0573177}
+  m_Size: {x: 1.9440737, y: 4.0573177}
   m_EdgeRadius: 0
 --- !u!4 &749481680
 Transform:
@@ -7394,6 +7425,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &749481681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749481678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8810964ade1026344aad05a8f2556147, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &762358337
 GameObject:
   m_ObjectHideFlags: 0
@@ -8387,6 +8430,7 @@ GameObject:
   - component: {fileID: 1806395406}
   - component: {fileID: 1806395408}
   - component: {fileID: 1806395407}
+  - component: {fileID: 1806395409}
   m_Layer: 0
   m_Name: PlatformSec
   m_TagString: Untagged
@@ -8417,7 +8461,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806395405}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d9f7b66146607a542a753e96463cfc83, type: 3}
   m_Name: 
@@ -8433,7 +8477,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806395405}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -8452,6 +8496,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.79106236, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1806395409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806395405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3342e09a13c7b64fa2879e9d5ef7fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pos1: {fileID: 180970}
+  pos2: {fileID: 1923152168}
+  speed: 3
+  startPos: {fileID: 180970}
 --- !u!1 &1812711563
 GameObject:
   m_ObjectHideFlags: 0
