@@ -27,14 +27,14 @@ public class BranchSpawn : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(1, 2));
+            yield return new WaitForSeconds(Random.Range(1, 3));
             randomPosLeft = Random.Range(-1f, 0);
             randomPosRight = Random.Range(0, 1f);
 
             randomIndex = Random.Range(0, branchReference.Length);
 
-            randomLength1 = Random.Range(0.9f, (3f - 0.9f) / 2f);
-            randomLength2 = 4.5f - randomLength1;
+            randomLength1 = Random.Range(3f, 4f);
+            randomLength2 = 5.5f - randomLength1;
 
             GameObject spawnedBranch1 = Instantiate(branchReference[randomIndex]);
             spawnedBranch1.transform.position = new Vector3(leftPos.position.x - (randomPosLeft),leftPos.position.y);

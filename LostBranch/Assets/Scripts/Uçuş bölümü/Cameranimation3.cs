@@ -6,20 +6,36 @@ using UnityEngine.SceneManagement;
 public class Cameranimation3 : MonoBehaviour
 {
 
-    private int click;
+    public Animator transitionAnim;
 
     public void Skip()
     {
+        StartCoroutine(Load());
+    }
+
+    IEnumerator Load()
+    {
+        transitionAnim.SetTrigger("end");
+        yield return new WaitForSeconds(0.99f);
         SceneManager.LoadScene(3);
+    }
+
+    IEnumerator _Camera()
+    {
+
+        yield return new WaitForSeconds(0.5f);
+        Camera.main.transform.Translate(0, -10f, 0);
+        StopCoroutine("_Camera");
     }
 
     void Update()
     {
-        while (Camera.main.transform.position.y > new Vector3(0, -50f, 0).y)
+        while (Camera.main.transform.position.y > new Vector3(0, -80f, 0).y)
         {
             if (Input.anyKeyDown)
             {
                 Camera.main.transform.Translate(0, -10f, 0);
+                StartCoroutine(_Camera());
                 break;
             }
             else
@@ -28,9 +44,7 @@ public class Cameranimation3 : MonoBehaviour
             }
         }
 
-        
-
-        while (Camera.main.transform.position.y == new Vector3(0, -50f, 0).y)
+        while (Camera.main.transform.position.y == new Vector3(0, -80f, 0).y)
         {
             if (Input.anyKeyDown)
             {
