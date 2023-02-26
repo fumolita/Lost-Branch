@@ -10,7 +10,7 @@ public class NextLevelEndCutscene : MonoBehaviour
     IEnumerator Load()
     {
         transitionAnim.SetTrigger("end");
-        yield return new WaitForSeconds(0.10f);
+        yield return new WaitForSeconds(0.01f);
         SceneManager.LoadScene(6);
     }
 
